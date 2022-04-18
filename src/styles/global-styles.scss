@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;
+}
+
+:root {
+  //&Neutral Colors
+
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
+}
+
+html, body {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+li, button {
+  cursor: pointer;
+}
