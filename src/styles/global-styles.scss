@@ -6,17 +6,22 @@
 }
 
 :root {
-  //&Neutral Colors
+  //& Neutral Colors
 
   --almost-white: hsl(0, 0%, 98%);
   --medium-gray: hsl(0, 0%, 41%);
   --almost-black: hsl(0, 0%, 8%);
+
+  //^ Font Weights
+
+  --medium: 500;
+  --bold: 700
 }
 
 html, body {
   max-width: 100vw;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 li, button {
