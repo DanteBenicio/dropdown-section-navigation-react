@@ -68,7 +68,7 @@ export default function Navbar() {
           <a href="#0" id="login-button">Login</a>
           <button type="button" id="register-button">Register</button>
         </div>
-        <button type="button" className="burger-btn">
+        <button type="button" className={`burger-btn ${openBurger ? 'open' : ''}`} onClick={toggleBurgerMenu}>
           <span />
           <span />
           <span />
