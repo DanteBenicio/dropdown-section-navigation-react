@@ -49,7 +49,7 @@ export default function Navbar() {
             </li>
             <li onClick={toggleMenu} onKeyDown={toggleMenu} role="menuitem" tabIndex={0}>
               Company
-              <img src="assets/icon-arrow-down.svg" alt="arrow down" className="list-icon" />
+              <img src="assets/icon-arrow-down.svg" alt="arrow down" className="list-icon" aria-hidden="true" />
               <div className="company-menu submenu">
                 <span>History</span>
                 <span>Our Team</span>
