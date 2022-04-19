@@ -15,7 +15,6 @@ export default function App() {
 
   const toggleBurgerMenu = () => setOpenBurger(prevState => !prevState);
 
-function App() {
   return (
     <>
       {openBurger && <Sidebar />}
@@ -24,5 +23,3 @@ function App() {
     </>
   );
 }
-
-export default App
