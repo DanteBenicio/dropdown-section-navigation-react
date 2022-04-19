@@ -2,8 +2,12 @@ import './App.css'
 
 function App() {
   return (
-    <h1>Hello World</h1>
-  )
+    <>
+      {openBurger && <Sidebar />}
+      <Navbar toggleBurgerMenu={toggleBurgerMenu} openBurger={openBurger} />
+      <HeroSection />
+    </>
+  );
 }
 
 export default App
