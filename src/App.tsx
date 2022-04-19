@@ -5,6 +5,13 @@ import Sidebar from './components/Sidebar';
 
 export default function App() {
   const [openBurger, setOpenBurger] = useState<boolean>(false);
+  const html = document.querySelector('html')!;
+
+  if (openBurger) {
+    html.style.overflowY = 'hidden';
+  } else {
+    html.style.overflowY = 'auto';
+  }
 
   const toggleBurgerMenu = () => setOpenBurger(prevState => !prevState);
 
