@@ -5,6 +5,24 @@ import './styles.scss';
 export default function Navbar({ toggleBurgerMenu, openBurger }: NavbarProps) {
   const listRef = useRef<HTMLUListElement | null>(null);
 
+  useEffect(() => {
+    const list = [...listRef.current!.children].filter((_, index) => index < 2);
+
+    window.addEventListener('click', (e: MouseEvent) => {
+      if (list[0].classList.contains('active') || list[1].classList.contains('active')) {
+        const elementClicked = e.target as HTMLElement;
+
+        list.forEach(li => {
+          if (elementClicked !== li) {
+            li.classList.remove('active');
+          }
+        });
+      }
+    });
+
+    return () => window.removeEventListener('click', () => {});
+  }, []);
+
   const toggleMenu = (e: any) => {
     const list = [...listRef.current!.children].filter((_, index) => index < 2);
     const liClicked = e.currentTarget! as HTMLLIElement;
