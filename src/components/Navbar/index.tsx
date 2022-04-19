@@ -25,7 +25,7 @@ export default function Navbar() {
         <div className="logo-list-wrapper">
           <img src="assets/logo.svg" alt="text writed snap" />
           <ul className="navbar-list" ref={listRef}>
-            <li onClick={toggleMenu}>
+            <li onClick={toggleMenu} onKeyDown={toggleMenu} role="menuitem" tabIndex={0}>
               Features
               <img src="assets/icon-arrow-down.svg" alt="arrow down" className="list-icon" />
               <div className="feature-menu submenu">
@@ -47,7 +47,7 @@ export default function Navbar() {
                 </span>
               </div>
             </li>
-            <li onClick={toggleMenu}>
+            <li onClick={toggleMenu} onKeyDown={toggleMenu} role="menuitem" tabIndex={0}>
               Company
               <img src="assets/icon-arrow-down.svg" alt="arrow down" className="list-icon" />
               <div className="company-menu submenu">
