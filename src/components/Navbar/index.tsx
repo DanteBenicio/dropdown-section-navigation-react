@@ -1,10 +1,6 @@
 import { useRef } from 'react';
+import { NavbarProps } from '../../types/navbar';
 import './styles.scss';
-
-type NavbarProps = {
-  toggleBurgerMenu: () => void
-  openBurger: boolean
-}
 
 export default function Navbar({ toggleBurgerMenu, openBurger }: NavbarProps) {
   const listRef = useRef<HTMLUListElement | null>(null);
