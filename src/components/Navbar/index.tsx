@@ -5,7 +5,7 @@ import './styles.scss';
 export default function Navbar({ toggleBurgerMenu, openBurger }: NavbarProps) {
   const listRef = useRef<HTMLUListElement | null>(null);
 
-  const toggleMenu = (e: MouseEvent) => {
+  const toggleMenu = (e: any) => {
     const list = [...listRef.current!.children].filter((_, index) => index < 2);
     const liClicked = e.currentTarget! as HTMLLIElement;
 
