@@ -44,7 +44,9 @@ export default function Navbar({ toggleBurgerMenu, openBurger }: NavbarProps) {
     <header className="navbar-container">
       <nav className="navbar-nav">
         <div className="logo-list-wrapper">
-          <img src="assets/logo.svg" alt="text writed snap" />
+          <a href="/">
+            <img src="assets/logo.svg" alt="text writed snap" aria-hidden="true" />
+          </a>
           <ul className="navbar-list" ref={listRef}>
             <li onClick={toggleMenu} onKeyDown={toggleMenu} role="menuitem" tabIndex={0}>
               Features
