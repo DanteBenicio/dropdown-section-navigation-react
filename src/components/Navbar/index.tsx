@@ -55,22 +55,22 @@ export default function Navbar({ toggleBurgerMenu, openBurger }: NavbarProps) {
               tabIndex={0}
             >
               Features
-              <img src="assets/icon-arrow-down.svg" alt="arrow down" className="list-icon" />
+              <img src="assets/icon-arrow-down.svg" alt="arrow down" className="list-icon" aria-hidden="true" />
               <div className="feature-menu submenu">
                 <span>
-                  <img src="assets/icon-todo.svg" alt="purple notebook" width="16px" />
+                  <img src="assets/icon-todo.svg" alt="purple notebook" width="16px" aria-hidden="true" />
                   Todo List
                 </span>
                 <span>
-                  <img src="assets/icon-calendar.svg" alt="blue calendar" width="16px" />
+                  <img src="assets/icon-calendar.svg" alt="blue calendar" width="16px" aria-hidden="true" />
                   Calendar
                 </span>
                 <span>
-                  <img src="assets/icon-reminders.svg" alt="yellow bell" width="16px" />
+                  <img src="assets/icon-reminders.svg" alt="yellow bell" width="16px" aria-hidden="true" />
                   Reminders
                 </span>
                 <span>
-                  <img src="assets/icon-planning.svg" alt="pink clock" width="16px" />
+                  <img src="assets/icon-planning.svg" alt="pink clock" width="16px" aria-hidden="true" />
                   Planning
                 </span>
               </div>
