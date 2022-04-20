@@ -48,7 +48,12 @@ export default function Navbar({ toggleBurgerMenu, openBurger }: NavbarProps) {
             <img src="assets/logo.svg" alt="text writed snap" aria-hidden="true" />
           </a>
           <ul className="navbar-list" ref={listRef}>
-            <li onClick={toggleMenu} onKeyDown={toggleMenu} role="menuitem" tabIndex={0}>
+            <li
+              onClick={toggleMenu}
+              onKeyDown={(e: KeyboardEvent<HTMLLIElement>) => e.code === 'Enter' && toggleMenu(e)}
+              role="menuitem"
+              tabIndex={0}
+            >
               Features
               <img src="assets/icon-arrow-down.svg" alt="arrow down" className="list-icon" />
               <div className="feature-menu submenu">
