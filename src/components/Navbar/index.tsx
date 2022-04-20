@@ -1,4 +1,6 @@
-import { useEffect, useRef } from 'react';
+import {
+  KeyboardEvent, useEffect, useRef,
+} from 'react';
 import { NavbarProps } from '../../types/navbar';
 import './styles.scss';
 
