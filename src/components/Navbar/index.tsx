@@ -90,10 +90,10 @@ export default function Navbar({ toggleBurgerMenu, openBurger }: NavbarProps) {
               </div>
             </li>
             <li>
-              Careers
+              <a href="#01">Careers</a>
             </li>
             <li>
-              About
+              <a href="#02">About</a>
             </li>
           </ul>
         </div>
